@@ -7,6 +7,8 @@
 }
 body {
     font-family: var(--main-font);
+    margin-right: auto;
+    margin-left: auto;
 }
 .list {list-style: none;}
 .link {text-decoration: none;}
@@ -20,19 +22,24 @@ ul, ol {
 }
 img {
     display: block;
+    margin: 0;
+    padding: 0;
 }
 .container {
     width: 1200px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin: 0;
 }
 /*====================HEADER====================*/
 .header {
-    padding: 30px 0;
+    border-bottom: 1px solid #ECECEC;
+    width: 1600px;
+    padding: 0 215px;
 }
 .header .container {
     display: flex;
     align-items: center;
+    padding: 32px;
 }
 .navigation {
     display: flex;
@@ -86,8 +93,17 @@ img {
 
 /*====================HERO====================*/
 .hero {
+    width: 1600px;
     background-color: var(--accent-color-background);
-    
+    padding: 0 215px;
+}
+.hero .container {
+    box-sizing: border-box;
+    background-color: var(--accent-color-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600;
+    min-height: 600px;
 }
 .title {
     font-family: var(--main-font);
@@ -98,6 +114,11 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 696px;
+    min-height: 120px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 .btn-order {
@@ -123,7 +144,22 @@ img {
 /*====================END HERO====================*/
 
 /*====================FEATURES====================*/
+.features-section {
+    width: 1600px;
+    padding: 0 215px;
+}
+.features {
+    display: flex;
+    padding: 95px 0;
+}
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
+.features-item {
+    width: 270px;
+}
 .features-title {
+    margin-bottom: 10px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -140,11 +176,18 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
 }
-/*====================END FEATURES====================*/
+/*================END FEATURES====================*/
 
 /*====================ABOUT====================*/
+.about {
+    width: 1600px;
+    padding: 0 215px;
+}
 .about-title,
 .our-team-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -153,9 +196,38 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
 }
+.about-img-list {
+    display: flex;
+    padding-bottom: 94px;
+}
+.about-img:not(:last-child) {
+    margin-right: 30px;
+}
 /*====================END ABOUT====================*/
 
 /*====================OUR TEAM====================*/
+.our-team-section {
+    width: 1600px;
+    padding: 0 215px;
+    background-color: #F5F4FA;
+}
+.our-team-section .container {
+    background-color: #F5F4FA;
+}
+.our-team {
+    border: 15px #000000;
+}
+.our-team-title {
+    padding-top: 94px;
+}
+.our-team-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+.our-team:not(:last-child) {
+    margin-right: 30px;
+}
 .our-team-name,
 .our-team-position {
     font-family: var(--main-font);
@@ -166,24 +238,43 @@ img {
     letter-spacing: 0.03em;
 }
 .our-team-name {
+    padding: 30px 0 10px;
     color: #212121;     
 }
-.our-team-position {   
+.our-team-position {  
+    padding-bottom: 30px; 
     color: #757575;
+}
+.board {
+    width: 270px;
+    height: 368px;
+    margin: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FFFFFF;
 }
 /*====================END OUR TEAM====================*/
 
 /*====================FOOTER====================*/
 .footer {
+    width: 1600px;
     background-color: var(--accent-color-background);
-    /*padding: 60px 215px;*/
+    padding: 0 215px;
+    outline: solid 2px #000000;
+}
+.footer .container {
+    background-color: var(--accent-color-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     color: #FFFFFF;
+    margin-bottom: 20px;
 }
+
 .footer-address,
 .footer-mail,
 .footer-tel {
+    min-width: 231px;
     font-family: var(--main-font);
     font-weight: 400l;
     font-style: normal;
@@ -191,7 +282,13 @@ img {
     line-height: 1.714;    
     letter-spacing: 0.03em;    
 }
+.footer-item {
+    width: 231px;
+}
 
+.footer-item:not(:last-child) {
+    padding-bottom: 9px;
+}
 .footer-address {
     color: #FFFFFF;
 }
@@ -218,6 +315,8 @@ img {
 
 .filter-btn {
     border:0;
+    padding: 6px 22px;
+    margin-bottom: 34px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -227,19 +326,35 @@ img {
     letter-spacing: 0.03em; 
     color: #212121;    
     cursor: pointer;
+    height: 38px;
+}
+
+.btn:not(:last-child) {
+    margin-left: 8px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
     color:  #FFFFFF;
     background: var(--accent-color);
 }
- 
+.filter-buttoms-list {
+    display: flex;
+    justify-content: center;
+}
 .current {
     color: var(--accent-color);
 }
 /*====================END FILTERS====================*/
 
 /*====================PORTFOLIO ACTIVE BUTTON ALL====================*/
+.content {
+    width: 1600px;
+    padding: 94px 215px;
+}
+.project-list {
+    margin-top: -30px;
+    margin-left: -30px;
+}
 .project-title {
     font-family: var(--main-font);
     font-style: normal;
@@ -257,6 +372,27 @@ img {
     line-height: 1.875;
     letter-spacing: 0.03em;  
     color: #757575;    
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.project {
+    width: 370px;
+    min-height: 404px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 0;
+    flex-basis: calc(100% / 3 - 60px);
+}
+.figure {
+    margin: 0;
+    padding: 0;
+}
+.proj-img-descrip {
+    padding: 20px 24px;
 }
 
 /*====================END PORTFOLIO ACTIVE BUTTON ALL====================*/
