@@ -353,37 +353,32 @@ img {
     width: 44px;
     height: 49px;
     padding: 20px 63px;
-    fill: #AFB1B8;
+    /*fill: #AFB1B8;*/
 }
 .our-clients-logo-2 {
     width: 40px;
     height: 52px;
     padding: 19px 65px;
-    fill: #AFB1B8;
 }
 .our-clients-logo-3 {
     width: 41px;
     height: 42px;
     padding: 24px 65px;
-    fill: #AFB1B8;
 }
 .our-clients-logo-4 {
     width: 79px;
     height: 42px;
     padding: 24px 45px;
-    fill: #AFB1B8;
 }
 .our-clients-logo-5 {
     width: 59px;
     height: 47px;
     padding: 22px 55px;
-    fill: #AFB1B8;
 }
 .our-clients-logo-6 {
     width: 88px;
     height: 45px;
     padding: 22px 41px;
-    fill: #AFB1B8;
 }
 /*====================END CLIENTS====================*/
 
