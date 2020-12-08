@@ -349,36 +349,43 @@ img {
     margin-right: 30px;
 }
  
-.our-clients-logo-1 {
+.our-clients-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+}
+.our-clients-link:hover .our-clients-logo,
+.our-clients-link:focus .our-clients-logo {
+    fill: var(--accent-color);
+}
+.our-clients-link:hover,
+.our-clients-link:focus {
+    border-color: var(--accent-color);
+}
+.logo-1 {
     width: 44px;
     height: 49px;
-    padding: 20px 63px;
-    /*fill: #AFB1B8;*/
 }
-.our-clients-logo-2 {
+.logo-2 {
     width: 40px;
     height: 52px;
-    padding: 19px 65px;
 }
-.our-clients-logo-3 {
+.logo-3 {
     width: 41px;
     height: 42px;
-    padding: 24px 65px;
 }
-.our-clients-logo-4 {
+.logo-4 {
     width: 79px;
     height: 42px;
-    padding: 24px 45px;
 }
-.our-clients-logo-5 {
+.logo-5 {
     width: 59px;
     height: 47px;
-    padding: 22px 55px;
 }
-.our-clients-logo-6 {
+.logo-6 {
     width: 88px;
     height: 45px;
-    padding: 22px 41px;
 }
 /*====================END CLIENTS====================*/
 
