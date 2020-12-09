@@ -33,11 +33,11 @@ img {
 /*====================HEADER====================*/
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding: 32px 0;
 }
 .header .container {
     display: flex;
     align-items: center;
-    padding: 32px;
 }
 .navigation {
     display: flex;
@@ -120,11 +120,11 @@ img {
     /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero .container {
     box-sizing: border-box;
-    padding-top: 200px;
-    padding-bottom: 200px;
     width: 1600;
     min-height: 600px;
 }
@@ -167,9 +167,12 @@ img {
 /*====================END HERO====================*/
 
 /*====================FEATURES====================*/
+.features-section {
+       padding: 95px 0 153px 0;
+}
 .features {
     display: flex;
-    padding: 95px 0 153px 0;
+ 
 }
 .features-item:not(:last-child) {
     margin-right: 30px;
@@ -212,6 +215,9 @@ img {
 /*================END FEATURES====================*/
 
 /*====================ABOUT====================*/
+.about {
+    padding-bottom: 35px;
+}
 
 .about-title,
 .our-team-title,
@@ -230,7 +236,6 @@ img {
 
 .about-img-list {
     display: flex;
-    padding-bottom: 35px;
 }
 .about-img:not(:last-child) {
     margin-right: 30px;
@@ -240,18 +245,17 @@ img {
 /*====================OUR TEAM====================*/
 .our-team-section {
     background-color: #F5F4FA;
+    padding-top: 94px;    
+    padding-bottom: 94px;
 }
 
 .our-team {
     border: 15px #000000;
 }
-.our-team-title {
-    padding-top: 94px;
-}
+
 .our-team-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 94px;
 }
 .our-team:not(:last-child) {
     margin-right: 30px;
@@ -386,11 +390,10 @@ img {
 .footer{
     background-color: var(--accent-color-background);
     outline: solid 2px #000000;   
-}
-.footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .logo-footer {
     display: inline-block;
     color: #FFFFFF;
@@ -481,6 +484,9 @@ img {
 /*====================END FOOTER====================*/
 
 /*====================FILTERS====================*/
+.filter-buttoms {
+    padding: 94px 0 34px 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -498,7 +504,6 @@ img {
 .filter-btn {
     border: 0;
     padding: 6px 22px;
-    margin-bottom: 34px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -530,9 +535,10 @@ img {
 /*====================END FILTERS====================*/
 
 /*====================PORTFOLIO ACTIVE BUTTON ALL====================*/
+
 .content {
     width: 1600px;
-    padding: 94px 215px;
+    padding-bottom: 94px;
 }
 .project-list {
     margin-top: -30px;
