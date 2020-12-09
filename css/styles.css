@@ -33,7 +33,6 @@ img {
 /*====================HEADER====================*/
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding: 0 215px;
 }
 .header .container {
     display: flex;
@@ -121,7 +120,6 @@ img {
     /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 215px;
 }
 .hero .container {
     box-sizing: border-box;
@@ -169,9 +167,6 @@ img {
 /*====================END HERO====================*/
 
 /*====================FEATURES====================*/
-.features-section {
-    padding: 0 215px;
-}
 .features {
     display: flex;
     padding: 95px 0 153px 0;
@@ -217,9 +212,7 @@ img {
 /*================END FEATURES====================*/
 
 /*====================ABOUT====================*/
-.about {
-    padding: 0 215px;
-}
+
 .about-title,
 .our-team-title,
 .our-clients-title {
@@ -246,7 +239,6 @@ img {
 
 /*====================OUR TEAM====================*/
 .our-team-section {
-    padding: 0 215px;
     background-color: #F5F4FA;
 }
 
@@ -393,7 +385,6 @@ img {
 /*====================FOOTER====================*/
 .footer{
     background-color: var(--accent-color-background);
-    padding: 0 215px;
     outline: solid 2px #000000;   
 }
 .footer .container {
@@ -453,8 +444,6 @@ img {
     width: 206px;
     min-height: 80px;
 }
-
-
 
 .sotial-list-f {
     display: flex;
