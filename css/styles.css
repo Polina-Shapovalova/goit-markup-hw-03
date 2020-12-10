@@ -123,11 +123,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.hero .container {
-    box-sizing: border-box;
-    width: 1600;
-    min-height: 600px;
-}
+
 .title {
     font-family: var(--main-font);
     font-weight: 900;
@@ -537,7 +533,6 @@ img {
 /*====================PORTFOLIO ACTIVE BUTTON ALL====================*/
 
 .content {
-    width: 1600px;
     padding-bottom: 94px;
 }
 .project-list {
@@ -574,7 +569,7 @@ img {
 .project {
     width: 370px;
     min-height: 404px;
-    margin-top: 30px;
+   margin-top: 30px;
     margin-left: 30px;
     padding: 0;
     flex-basis: calc(100% / 3 - 60px);
