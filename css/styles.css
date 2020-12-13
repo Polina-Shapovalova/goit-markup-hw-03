@@ -483,7 +483,7 @@ img {
 
 /*====================FILTERS====================*/
 .filter-buttoms {
-    padding: 94px 0 34px 0;
+    margin-bottom: 34px;
 }
 .visually-hidden {
   position: absolute;
@@ -533,11 +533,10 @@ img {
 /*====================END FILTERS====================*/
 
 /*====================PORTFOLIO ACTIVE BUTTON ALL====================*/
-
 .content {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
-
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -545,33 +544,33 @@ img {
     margin: 0;
     margin-left: -30px;
     margin-top: -30px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
-  .card-set > .card-item {
+.card-set > .card-item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-  }
+}
   
 .card-item {
     width: 370px;
     padding: 0;
     border: solid 1px #eeeeee;
-    overflow: hidden;
 }
 
-.card-item:hover,
-.card-item:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+.card-link {
+    display: block;
 }
 
-.card-link:hover,
-.card-link:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+.card-item .card-link:hover,
+.card-item .card-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),  
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16); 
 }
 
-.card-descript{
+.card-descript {
     padding: 20px 24px;
 }
 
