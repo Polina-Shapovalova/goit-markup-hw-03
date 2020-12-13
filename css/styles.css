@@ -24,7 +24,9 @@ img {
     display: block;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
+
 .container {
     width: 1200px;
     padding: 0 15px;
@@ -534,12 +536,45 @@ img {
 
 .content {
     padding-bottom: 94px;
-    width: 1230px;
 }
-.project-list {
-    margin-top: -30px;
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
     margin-left: -30px;
+    margin-top: -30px;
+    /*overflow: hidden;*/
 }
+
+  .card-set > .card-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+.card-item {
+    width: 370px;
+    padding: 0;
+    border: solid 1px #eeeeee;
+    overflow: hidden;
+}
+
+.card-item:hover,
+.card-item:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.card-link:hover,
+.card-link:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.card-descript{
+    padding: 20px 24px;
+}
+
 .project-title {
     font-family: var(--main-font);
     font-style: normal;
@@ -561,32 +596,4 @@ img {
     letter-spacing: 0.03em;  
     color: #757575;    
 }
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
-.project {
-    min-height: 404px;
-    margin-top: 30px;
-    margin-left: 30px;
-    padding: 0;
-    flex-basis: calc(100% / 3 - 90px);
-    border: solid 1px #eeeeee;
-}
-.project:hover,
-.project:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.figure {
-    margin: 0;
-    padding: 0;
-    width: 370px;
-}
-
-.proj-img-descrip {
-    padding: 20px 24px;
-}
-
 /*====================END PORTFOLIO ACTIVE BUTTON ALL====================*/
